@@ -22,6 +22,9 @@ int main(){
 	 x1=(-b-sqrt(D))/2*a;
 	 x2=(-b+sqrt(D))/2*a;
  }
+ if ((a=0)&&(b=0)) {
+	 cout<<"error"<<endl;
+ }
  cout<<"x1="<<x1<<" "<<"x2="<<x2<<endl;
  }
 

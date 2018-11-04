@@ -14,19 +14,19 @@ using namespace std;
 
     int main() {
 	double X,Y,A,B,S;
-	cin>>S;
-	if (S>A) {
-		cout<<"стоимость покупки ="<<S*(1-X/100)<<endl;
+	cin>>X>>Y>>A>>B>>S;
+
+	if ((S>A)&&(S<B)) {
+		cout<<S*(1-X/100)<<endl;
 	}
-	else {
-		cout<<S<<endl;
-	}
+
 	if (S>B) {
-		cout<<"стоимость покупки ="<<S*(1-Y/100)<<endl;
+		cout<<S*(1-Y/100)<<endl;
 	}
-	else {
+	if (S<A) {
 		cout<<S<<endl;
 	}
+
 }
 
 
